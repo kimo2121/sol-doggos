@@ -1,0 +1,27 @@
+.join-button {
+  font-family: "Nova Mono", Sans-serif;
+  font-size: 37px;
+  font-weight: 800;
+  color: white;
+  line-height: 32px;
+  background-color: #190201;
+  border-style: solid;
+  border-width: 8px;
+  border-color: white;
+  padding: 20px 40px;
+  margin: 5vh 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.join-twitter:hover {
+  background-color: #2dacfc;
+}
+.join-discord:hover {
+  background-color: #ea423b;
+}
+@media screen and (max-width: 550px) {
+  .join-button {
+    width: 80%;
+    font-size: 5vmin;
+  }
+}

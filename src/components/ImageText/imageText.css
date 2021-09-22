@@ -1,0 +1,103 @@
+.member {
+  display: flex;
+  text-align: left;
+  margin-bottom: 2vh;
+  width: 100%;
+  align-items: center;
+}
+.member h5 {
+  color: #fff82b;
+  margin: 1.5vh 0;
+  font-family: "Nova Mono", Sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-shadow: -54px 0px 10px rgb(0 0 0 / 30%);
+}
+.member span {
+  color: #ffffff;
+  font-family: "Play", Sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.1px;
+}
+.member img {
+  margin-right: 0.7vw;
+  width: 203px;
+  height: 203px;
+}
+
+@media screen and (max-width: 990px) {
+  .gang {
+    width: 720px;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gang {
+    width: 90%;
+    padding: 0;
+  }
+  .member {
+    flex-direction: column;
+  }
+  .member img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.each-plan {
+  border: 2px solid white;
+  display: flex;
+  text-align: left;
+  margin-bottom: 2vh;
+  width: 100%;
+  align-items: center;
+}
+.each-plan img {
+  width: 177px;
+  margin-right: 0.7vw;
+  height: 140px;
+  object-fit: fill;
+}
+.each-plan h5 {
+  margin: 0.6vh 0;
+  color: #6ec1e4;
+  font-family: "Nova Mono", Sans-serif;
+  font-size: 29px;
+  font-weight: 600;
+}
+.each-plan span {
+  color: #ffffff;
+  font-family: "Play", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+}
+@media screen and (max-width: 768px) {
+  .each-plan {
+    flex-direction: column;
+    width: 475px;
+    margin: 2vh auto;
+  }
+  .each-plan div {
+    padding: 10px 20px;
+  }
+  .each-plan img {
+    width: 475px;
+    height: 336px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .each-plan {
+    width: 90%;
+  }
+  .each-plan img {
+    width: 100%;
+    height: 100%;
+  }
+}

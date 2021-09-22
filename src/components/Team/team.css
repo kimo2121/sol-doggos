@@ -1,0 +1,91 @@
+.team {
+  width: 1140px;
+  margin: 0 auto;
+}
+.team h2 {
+  font-family: "Nova Mono", Sans-serif;
+  font-size: 57px;
+  font-weight: 600;
+  color: #6ec1e4;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+}
+.team-member p {
+  color: #ffffff;
+  font-family: "Play", Sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 100%;
+}
+.team-member {
+  margin: 0 5vw;
+}
+.team-member h5 {
+  font-family: "Play", Sans-serif;
+  color: #6ec1e4;
+  margin: 1vh 0;
+  font-size: 23px;
+  font-weight: 600;
+}
+.team-member img {
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+}
+.team-member svg {
+  border-radius: 4px;
+  fill: white;
+}
+.deviantart {
+  background: white;
+  width: 50px;
+  border-radius: 10%;
+  height: 50px;
+  margin: 2vh 0.2vw;
+}
+.instagram {
+  background: unset;
+  background-color: #262626;
+  padding: 15px;
+  margin: 2vh 0.2vw;
+  border-radius: 10%;
+  line-height: 0;
+}
+.instagram svg {
+  height: 20px;
+  width: 20px;
+}
+.nd-member {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .team {
+    width: 970px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .team {
+    width: 750px;
+  }
+  .team-member {
+    margin: 0 2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+  }
+  .team-member {
+    margin: 2vh 2vw;
+  }
+  .team {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

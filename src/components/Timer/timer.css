@@ -1,0 +1,28 @@
+.border-divider::before {
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 0;
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+}
+.timer-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+.timer-mint-container {
+  font-family: "Nova Mono", Sans-serif;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #ea423b 0%, #190201 100%);
+}
+@media screen and (max-width: 768px) {
+  .days-cirlce,
+  .hours-cirlce,
+  .minutes-cirlce,
+  .seconds-cirlce {
+    flex-direction: column;
+    align-items: center !important;
+  }
+}

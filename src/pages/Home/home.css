@@ -1,0 +1,41 @@
+.banner {
+  background-image: url(/src/assets/images/Main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  background-position: center center;
+}
+.origins {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.origin-container {
+  background-color: white;
+}
+.origins img {
+  width: 388px;
+  height: 487px;
+}
+.origins h3 {
+  margin-bottom: 33px;
+  color: #ea423b;
+  font-family: "Play", Sans-serif;
+  font-size: 3vmax;
+  font-weight: 800;
+  line-height: 1px;
+}
+.origins p {
+  color: #000000;
+  font-family: "Play", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .origins {
+    flex-direction: column;
+    width: 90%;
+  }
+}

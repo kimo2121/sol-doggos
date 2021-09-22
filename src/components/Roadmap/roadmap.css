@@ -1,0 +1,17 @@
+.roadmap {
+  color: white;
+  width: 730px;
+  margin: 0 auto;
+}
+
+.roadmap h2 {
+  font-family: "Nova Mono", Sans-serif;
+  font-size: 57px;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .roadmap {
+    margin: 0 auto;
+    width: 100%;
+  }
+}

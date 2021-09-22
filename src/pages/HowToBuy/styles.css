@@ -1,0 +1,155 @@
+.how-buy {
+  width: 1170px;
+  margin: 0 auto;
+}
+.how-to-buy-img {
+  width: 100%;
+  max-width: 1580px;
+}
+.Buy-sol img {
+  width: 740px;
+  height: 310px;
+}
+.Buy-sol h3 {
+  color: #ffffff;
+  font-family: "Nova Mono", Sans-serif;
+  font-weight: 600;
+  text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+}
+.Buy-sol em {
+  font-family: Play;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 10px;
+}
+.wallets-addr-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.wallets-addr-container div {
+  display: flex;
+  flex-direction: column;
+}
+.wallets-addr-container {
+  font-family: Play;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffff00;
+  font-size: 18px;
+}
+.wallets-addr-container a {
+  color: white;
+  text-decoration: none;
+}
+.create-wallet h4 {
+  font-family: Play;
+  line-height: 34px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 24px;
+}
+.create-wallet button {
+  font-family: "Play", Sans-serif;
+  font-size: 27px;
+  font-weight: 800;
+  cursor: pointer;
+  border: none;
+  transition: color 0.3s;
+  padding: 20px 40px;
+  color: #000000;
+  border-radius: 5px;
+  background-color: #ffef24;
+}
+.create-wallet button:hover {
+  color: white;
+}
+.exchange-steps {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.exchange-steps h2 {
+  color: #ffff00;
+}
+.exchange-steps h5 {
+  color: white;
+}
+.exchange-steps img {
+  width: 260px;
+  height: 260px;
+}
+.exchange-steps div {
+  width: 280px;
+  margin: 15px;
+}
+.exchange-steps div h5 {
+  margin: 1vh 0;
+}
+.mint-sol img {
+  width: 350px;
+  height: 285px;
+}
+@media screen and (max-width: 1200px) {
+  .how-buy {
+    width: 940px;
+  }
+  .Buy-sol img {
+    width: 608px;
+    height: 253px;
+  }
+  .exchange-steps div {
+    width: 230px;
+  }
+  .exchange-steps img {
+    width: 210px;
+    height: 203px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .how-buy {
+    width: 750px;
+  }
+  .exchange-steps h2 {
+    font-size: 19px;
+  }
+  .exchange-steps div {
+    width: 175px;
+  }
+  .exchange-steps img {
+    width: 155px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .how-buy {
+    width: 95%;
+  }
+  .Buy-sol img {
+    width: 95%;
+  }
+  .wallets-addr-container {
+    flex-direction: column;
+  }
+  .wallets-addr-container div {
+    margin: 2vh 0;
+  }
+  .exchange-steps {
+    flex-direction: column;
+  }
+  .exchange-steps div {
+    width: 95%;
+    /* margin: 1vh 0; */
+  }
+  .exchange-steps img {
+    width: 95%;
+    height: 100%;
+  }
+  .mint-sol img {
+    width: 95%;
+    height: 100%;
+  }
+}

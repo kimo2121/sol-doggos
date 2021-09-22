@@ -1,0 +1,13 @@
+Black color  #190201
+Red color #D53C35
+Yellow color #FFF82B
+Blue color #50A3D8
+
+Fonts:
+
+H1 Nova Mono Normal 400 44 px 
+H2 Nova Mono normal 400 32 px
+H3 Nova Mono normal 400 26 px
+H4 PLAY normal 400 24 PX
+H5 -//-
+H6 -//-

@@ -1,0 +1,15 @@
+.gang {
+  width: 930px;
+  margin: 0 auto;
+  color: white;
+}
+.gang h2 {
+  color: #fff82b;
+  font-family: "Nova Mono", Sans-serif;
+  font-size: 57px;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Play";
+  src: url(/src/assets/Play/Play-Regular.ttf);
+}
