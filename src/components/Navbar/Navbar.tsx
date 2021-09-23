@@ -6,9 +6,10 @@ import discord from "../../assets/icons/Discord.png";
 import twitter from "../../assets/icons/Twitter.png";
 import styled from "styled-components";
 import { Button, CircularProgress, Snackbar } from "@material-ui/core";
-
-const ConnectWallet = styled(Button)`
-  border: none;
+import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
+import { WalletMultiButton } from "@solana/wallet-adapter-material-ui";
+const ConnectButton = styled(WalletMultiButton)`
+border: none;
   box-sizing: border-box !important;
   outline: none;
   line-height: unset;
@@ -34,6 +35,9 @@ const ConnectWallet = styled(Button)`
   &:disabled {
     color: #000000 !important;
     background-color: gray !important;
+`;
+const ConnectWallet = styled(Button)`
+  
   }
 `; // add your styles here
 
@@ -61,14 +65,14 @@ const Navbar: React.FC = () => {
 
   return (
     <div className={navbar ? "navbar height" : "navbar"}>
-      <ConnectWallet
+      <ConnectButton
         className="mint-btn"
         // disabled={isSoldOut || isMinting || !isActive}
         // onClick={onMint}
         variant="contained"
       >
         Connect Wallet
-      </ConnectWallet>
+      </ConnectButton>
       <div className="web-nav">
         <div className="external-social">
           <a href="https://discord.com/invite/U8rwDBHH8r">
