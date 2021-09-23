@@ -1,0 +1,9 @@
+.presale-inner {
+  background-image: url(/src/assets/images/Mini_main.png);
+  height: 30vh;
+  margin-top: 15vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 2vh;
+}

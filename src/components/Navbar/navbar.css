@@ -9,7 +9,7 @@
   justify-content: center;
   position: relative;
   transition: height 0.3s;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 10px 50px;
   height: 103px;
 }
 .navbar.height {
@@ -92,7 +92,7 @@
   position: relative;
   z-index: 100000;
   width: 20px;
-  padding: 20px 10px;
+  padding: 10px 10px 0 10px;
   fill: white;
   transition: all 0.4s;
 }
@@ -178,5 +178,17 @@
   }
   .mobile-logo {
     width: 70vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .external-social img {
+    display: none;
+  }
+  .external-social.slide img {
+    display: inline-block;
+  }
+
+  .slide-menu-icon {
+    margin-top: 2vh;
   }
 }
