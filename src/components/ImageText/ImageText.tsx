@@ -26,7 +26,7 @@ const ImageText: React.FC<ImageTextTypes> = ({
       <img src={img} alt="" />
       <div>
         <h5>{h5}</h5>
-        <span>T{span}</span>
+        <span>{span}</span>
       </div>
     </div>
   );

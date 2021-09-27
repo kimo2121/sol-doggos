@@ -4,43 +4,6 @@ import { Link } from "react-scroll";
 import { ReactComponent as Menu } from "../../assets/icons/menu.svg";
 import discord from "../../assets/icons/Discord.png";
 import twitter from "../../assets/icons/Twitter.png";
-import styled from "styled-components";
-import { Button, CircularProgress, Snackbar } from "@material-ui/core";
-import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
-import { WalletMultiButton } from "@solana/wallet-adapter-material-ui";
-const ConnectButton = styled(WalletMultiButton)`
-border: none;
-  box-sizing: border-box !important;
-  outline: none;
-  line-height: unset;
-  top: 0;
-  margin-top: 3vh !important;
-  position: absolute !important;
-  left: 0;
-  margin-left: 2vw !important;
-  font-family: Nova Mono !important;
-  font-size: 24px !important;
-  padding: 10px 20px;
-  border-radius: 10px !important;
-  color: black !important;
-  width: 300px !important;
-  background-color: white !important;
-  box-shadow: 0 1px 2px 2px red !important;
-  &:hover {
-    background-color: #ea413b !important;
-    box-shadow: unset;
-    color: white !important ;
-    box-shadow: 0 1px 2px 2px white !important;
-  }
-  &:disabled {
-    color: #000000 !important;
-    background-color: gray !important;
-`;
-const ConnectWallet = styled(Button)`
-  
-  }
-`; // add your styles here
-
 const Navbar: React.FC = () => {
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
@@ -65,50 +28,37 @@ const Navbar: React.FC = () => {
 
   return (
     <div className={navbar ? "navbar height" : "navbar"}>
-      <ConnectButton
-        className="mint-btn"
-        // disabled={isSoldOut || isMinting || !isActive}
-        // onClick={onMint}
-        variant="contained"
-      >
-        Connect Wallet
-      </ConnectButton>
       <div className="web-nav">
+        <Link activeClass="active" smooth={true} duration={800} to="RoadMap">
+          Roadmap
+        </Link>
+        <Link activeClass="active" smooth={true} duration={800} to="Team">
+          Team
+        </Link>
         <div className="external-social">
-          <a href="https://discord.com/invite/U8rwDBHH8r">
+          <a href="https://discord.gg/Xg7W3jQyB3">
             <img src={discord} alt="" />
           </a>
-          <a href="https://twitter.com/SolDoggos">
+          <a href="https://twitter.com/BadAssDoggos?s=09">
             <img src={twitter} alt="" />
           </a>
-        </div>
-        <div className="nav-links">
-          <Link activeClass="active" smooth={true} duration={800} to="RoadMap">
-            Roadmap
-          </Link>
-          <Link activeClass="active" smooth={true} duration={800} to="Team">
-            Team
-          </Link>
-          <a href="/how-to-buy">How to Buy?</a>
         </div>
       </div>
       <div className="slide-menu">
-        <div className="external-social">
-          <a href="https://discord.com/invite/U8rwDBHH8r">
-            <img src={discord} alt="" />
-          </a>
-          <a href="https://twitter.com/SolDoggos">
-            <img src={twitter} alt="" />
-          </a>
-        </div>
         <div className="slide-outter">
-          <div className="logo mobile-logo"></div>
+          <div className="external-social">
+            <a href="https://discord.gg/Xg7W3jQyB3">
+              <img src={discord} alt="" />
+            </a>
+            <a href="https://twitter.com/BadAssDoggos?s=09">
+              <img src={twitter} alt="" />
+            </a>
+          </div>
           <Menu
             onClick={toggleAccordion}
             className={setActive ? "slide-menu-icon active" : "slide-menu-icon"}
           />
         </div>
-
         <div
           ref={content}
           style={{ maxHeight: `${setHeight}` }}
@@ -132,17 +82,6 @@ const Navbar: React.FC = () => {
           >
             Team
           </Link>
-          <a onClick={toggleAccordion} href="/how-to-buy">
-            How to Buy?
-          </a>
-          <div className="external-social slide">
-            <a href="https://discord.com/invite/U8rwDBHH8r">
-              <img src={discord} alt="" />
-            </a>
-            <a href="https://twitter.com/SolDoggos">
-              <img src={twitter} alt="" />
-            </a>
-          </div>
         </div>
       </div>
     </div>

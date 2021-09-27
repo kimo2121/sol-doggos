@@ -19,7 +19,7 @@ const Team: React.FC = () => {
             <p>Project Manager</p>
           </div>
         </div>
-        <div className="team-member">
+        {/* <div className="team-member">
           <img src={Artist_photo} alt="" />
           <div>
             <h5>Kitka /kitucha66/</h5>
@@ -36,8 +36,8 @@ const Team: React.FC = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div className="team-member">
+        </div> */}
+        {/* <div className="team-member">
           <img src={przyklad_2} alt="" />
           <div>
             <h5>Mia Paw</h5>
@@ -47,7 +47,7 @@ const Team: React.FC = () => {
               Marketing
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

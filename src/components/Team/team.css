@@ -11,6 +11,7 @@
 
 .team-container {
   display: flex;
+  margin: 5vh auto;
   justify-content: center;
 }
 .team-member p {

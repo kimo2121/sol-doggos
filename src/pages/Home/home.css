@@ -1,9 +1,9 @@
 .banner {
-  background-image: url(/src/assets/images/unknown.png);
+  background-image: url(/src/assets/images/Main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
-  background-position: center center;
+  height: 60vh;
+  background-position: bottom center;
 }
 .origins {
   width: 100%;
@@ -21,7 +21,7 @@
 }
 .origins h3 {
   margin-bottom: 33px;
-  color: #ea413b;
+  color: #ea423b;
   font-family: "Play", Sans-serif;
   font-size: 3vmax;
   font-weight: 800;
@@ -33,17 +33,42 @@
   font-size: 17px;
   font-weight: 400;
 }
+.connect-wallet {
+  font-size: 1.6vmax;
+  color: #c93638;
+  padding: 10px 30px;
+  border-radius: 8px;
+  margin-top: 2vh;
+  border: 1px solid #c93638;
+  box-shadow: 0 0 5px 0 white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.connect-wallet {
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+}
+.connect-wallet:hover,
+.collection-btn:hover {
+  background-color: rgba(49, 49, 49, 0.61);
+}
+@media screen and (max-width: 1200px) {
+  .banner {
+    height: 46vh;
+  }
+}
 @media screen and (max-width: 768px) {
   .origins {
     flex-direction: column;
     width: 90%;
   }
   .banner {
-    background-size: 200% 100%;
+    height: 42vh;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .banner {
-    background-size: 200% 80%;
+    height: 28vh;
   }
 }

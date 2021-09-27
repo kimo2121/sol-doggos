@@ -1,0 +1,67 @@
+.mint-component {
+  background: #212529;
+  color: white;
+  width: 540px;
+  margin: 5vh auto 0 auto;
+  padding-bottom: 5vh;
+  opacity: 1 !important;
+  height: fit-content;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+.mint-component h2 span {
+  color: #c93638;
+}
+.btn-group {
+  display: flex;
+  max-width: 300px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.inner-btn-group {
+  align-items: center;
+}
+
+.mint-component p {
+  font-size: 22px;
+}
+.mint-span-details {
+  padding: 10px;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  box-shadow: 0px 0px 3px 1px #c93638;
+  border-radius: 5px;
+  margin: 2vh auto;
+  width: 320px;
+}
+.mint-component img {
+  margin-top: -5vh;
+  transition: transform 0.5s;
+  height: 90px;
+  width: 90px;
+}
+.mint-component img:hover {
+  transform: rotate(5deg);
+}
+@media screen and (max-width: 768px) {
+  .mint-component {
+    width: 350px;
+  }
+  .mint-component p {
+    font-size: 15px;
+  }
+
+  .mint-component {
+    padding-bottom: 2vh;
+  }
+  .mint-span-details span {
+    font-size: 12px;
+  }
+  .mint-span-details {
+    width: 250px !important;
+  }
+  .btn-group {
+    width: 260px;
+  }
+}

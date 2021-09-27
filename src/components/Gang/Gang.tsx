@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./gang.css";
-import Londogg from "../../assets/images/Londogg.png";
+import Londogg from "../../assets/images/Londogg.jpg";
 import NewDogg from "../../assets/images/NewDogg.png";
 import Doggyo from "../../assets/images/Doggyo.png";
 import ImageText from "../ImageText/ImageText";
@@ -43,12 +43,12 @@ const Gang: React.FC = () => {
         className="member"
         h5="Doggyo"
         img={Doggyo}
-        span=" This elite Gang only recruits members among Doggos who underwent
+        span="This elite Gang only recruits members among Doggos who underwent
             Cybernetic Expansions. They believe that the bright future of the
             Doggo race can only be achieved through Technological Singularity."
       />
       <Button
-        url="https://discord.com/invite/U8rwDBHH8r"
+        url="https://discord.gg/Xg7W3jQyB3"
         text="Join Our Discord"
         className="join-discord"
       />

@@ -25,12 +25,9 @@ const Roadmap: React.FC = () => {
       <div className="maps-container">
         <ImageText
           className="each-plan"
-          h5="New Gang Airdrop"
+          h5="MASS MARKETING"
           img={ten}
-          span=" 500 new characters enter the metaverse! Never-before-seen Sol
-          Doggo Gang with unique new traits will make its way to wallets of
-          lucky holders who decide to keep their Sol Doggos after the
-          launch."
+          span="Hire bsc-consultants.com for a full scale marketing campaign including Times Square Billboard.  Implement Rarity Sniper so that everyone can check their rarities."
         />
         <ImageText
           className="each-plan"
@@ -43,13 +40,9 @@ const Roadmap: React.FC = () => {
         />
         <ImageText
           className="each-plan"
-          h5="Sol Doggos: Origins"
+          h5="BAD ASS DOGGOS: THE GAME"
           img={fifty}
-          span="A comic book will be published, shedding more light on the
-          dystopian society of Sol Doggos and the underlying conflict of
-          Gangs. Sol Doggos: Origins will unfold the backstory of Londogg,
-          New Dogg, and Doggyo Gangs and how a mysterious fourth Gang plays
-          into the story."
+          span="Begun work on a gang style video game incorporating the doggos and their stories.  This game will give randomized bonuses to holders potentially making common doggos more valuable.  It will also only be available to holders of doggos creating an exclusive club!"
         />
         <ImageText
           className="each-plan"
@@ -71,7 +64,7 @@ const Roadmap: React.FC = () => {
       </div>
       <Button
         className="join-twitter"
-        url="https://twitter.com/SolDoggos"
+        url="https://twitter.com/BadAssDoggos?s=09"
         text="Follow Our Twitter"
       />
     </div>
